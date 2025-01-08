@@ -1199,7 +1199,7 @@ void deleteClient(){
 	
 	char erase[20];
 	
-	printf("\tMOI NHAP ID SACH CAN XOA: ");
+	printf("\tMOI NHAP ID KHACH HANG CAN XOA: ");
 	fgets(erase, 20, stdin);
 	erase[strcspn(erase, "\n")] = '\0';
 	
@@ -1216,7 +1216,7 @@ void deleteClient(){
 	fclose(fptr);
 	
 	if(temp == 0){
-		printf("\n ID KHACH HANG KHONG TON TAI !!");
+		printf("\n\tID KHACH HANG KHONG TON TAI !!");
 	}else{
 		int deleteChoice;
 		printf("\n\tXAC NHAN XOA [1]  HUY [0]    :");
